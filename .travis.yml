@@ -7,7 +7,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t nmaokafor/react-test -f Dockerfile.dev .
+  - docker build -t nmaokafor/react-test -f ./client/Dockerfile.dev ./client
 
 script:
   - docker run -e CI=true nmaokafor/react-test npm run test
