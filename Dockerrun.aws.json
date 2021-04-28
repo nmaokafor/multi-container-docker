@@ -5,6 +5,7 @@
             "name": "client",
             "image": "nmaokafor/multi-container-client",
             "hostname": "client",
+            "memory": 128,
             "essential": false
         },
         {
